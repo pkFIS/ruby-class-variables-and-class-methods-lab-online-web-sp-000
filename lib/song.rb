@@ -33,7 +33,9 @@ class Song
   end
 
   def artist_count
-    @@artists
+    artist_hash = {}
+    @@artists.each {|key| artist_hash[key] = @@artists.count(key) }
+    artist_hash
   end
 
 end
