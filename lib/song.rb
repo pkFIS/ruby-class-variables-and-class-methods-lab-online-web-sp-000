@@ -27,7 +27,8 @@ class Song
   end
 
   def genre_count
-    genre_count = { @@genres => @@count }
+    genre_hash = {}
+    genre_hash = { @@genres => @@count }
   end
 
   def artist_count
