@@ -27,13 +27,11 @@ class Song
   end
 
   def genre_count
-    @@genres
+    genre_count_hase = { @@genres => @@count }
   end
 
   def artist_count
     @@artists
   end
-
-
 
 end
